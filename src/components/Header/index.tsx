@@ -31,7 +31,7 @@ export default function Header() {
                         </ul>
                     </div>
                     <div className="align-self-center">
-                        <Link href={"/"} className="nav-link px-5 py-3 bg-primary-gradient rounded-pill text-white">Request Invite</Link>
+                        <Link href={"/"} className="nav-link px-4 py-2 bg-primary-gradient rounded-pill text-white"><b>Request Invite</b></Link>
                     </div>
                 </nav>
             </header>
