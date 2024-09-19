@@ -9,7 +9,7 @@ export default function Header() {
                     </div>
                     <div>
                         <ul>
-                            <li><Link href={"/"}>Home</Link></li>
+                            <li><Link href={"/"} className="bg-primary text-white px-4 py-2 rounded" >Home</Link></li>
                             <li><Link href={"/"}>About</Link></li>
                             <li><Link href={"/"}>Contact</Link></li>
                             <li><Link href={"/"}>Blogs</Link></li>
