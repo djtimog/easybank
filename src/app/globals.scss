@@ -1,7 +1,8 @@
-@use "/src/app/styles" as *;
 @import "~bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+
+$primary-gradient: linear-gradient(to right, #20c997, #09dff2);
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +19,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-primary-gradient {
+  background: $primary-gradient;
 }
