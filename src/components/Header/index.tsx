@@ -1,7 +1,13 @@
+"use client";
 import Link from "next/link";
 import logo from "@/images/logo.svg"
 import Image from "next/image";
+import { useState } from 'react';
 export default function Header() {
+    const [toggle, setToggle] = useState(false);
+    const switchToggle = () =>{
+        setToggle(!toggle);
+    }
     return(
         <>
             <header className="py-3 position-sticky w-100">
@@ -11,7 +17,12 @@ export default function Header() {
                             <Image src={logo.src} alt="easy bank logo" className="img-fluid w-100" width={`1`} height={`1`} />
                         </Link>
                     </div>
-                    <div className="d-none d-md-block align-self-center">
+                    <div className="d-block d-md-none">
+                        <div onClick={switchToggle}>
+                            <i className={`bi bi-${toggle ? 'x' : 'list'} h2`}></i>
+                        </div>
+                    </div>
+                    <div className={`${toggle ? 'position-absolute' : 'd-none'} d-md-block align-self-center `}>
                         <ul className="nav">
                             <li className="nav-item">
                                 <Link href={"/"} className="nav-link text-secondary">Home</Link>
@@ -30,7 +41,7 @@ export default function Header() {
                             </li>
                         </ul>
                     </div>
-                    <div className="align-self-center">
+                    <div className="d-none d-md-block align-self-center">
                         <Link href={"/"} className="nav-link px-4 py-2 bg-primary-gradient rounded-pill text-white"><b>Request Invite</b></Link>
                     </div>
                 </nav>
