@@ -3,21 +3,31 @@ export default function Header() {
     return(
         <>
             <header>
-                <nav>
+                <nav className="d-flex justify-content-around align-content-center">
                     <div>
-                        <Link href={"/"}>easy bank</Link>
+                        <Link href={"/"} className="nav-link">easy bank</Link>
                     </div>
-                    <div>
-                        <ul>
-                            <li><Link href={"/"} className="" >Home</Link></li>
-                            <li><Link href={"/"}>About</Link></li>
-                            <li><Link href={"/"}>Contact</Link></li>
-                            <li><Link href={"/"}>Blogs</Link></li>
-                            <li><Link href={"/"}>Careers</Link></li>
+                    <div className="d-none d-md-block">
+                        <ul className="nav">
+                            <li className="nav-item disabled">
+                                <Link href={"/"} className="nav-link" >Home</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link href={"/"} className="nav-link">About</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link href={"/"} className="nav-link">Contact</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link href={"/"} className="nav-link">Blogs</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link href={"/"} className="nav-link">Careers</Link>
+                            </li>
                         </ul>
                     </div>
                     <div>
-                        <Link href={"/"}>Request Invite</Link>
+                        <Link href={"/"} className="nav-link">Request Invite</Link>
                     </div>
                 </nav>
             </header>
