@@ -10,8 +10,8 @@ export default function Header() {
     }
     return(
         <>
-            <header className="py-3 position-sticky w-100">
-                <nav className="d-flex justify-content-around">
+            <header className="py-3 position-sticky w-100 bg-inherit">
+                <nav className="d-flex justify-content-around h-2vh">
                     <div className="align-self-center">
                         <Link href={"/"} className="nav-link align-self-center">
                             <Image src={logo.src} alt="easy bank logo" className="img-fluid w-100" width={`1`} height={`1`} />
@@ -22,9 +22,9 @@ export default function Header() {
                             <i className={`bi bi-${toggle ? 'x' : 'list'} h2`}></i>
                         </div>
                     </div>
-                    <div className={`${toggle ? 'position-absolute' : 'd-none'} d-md-block align-self-center `}>
-                        <ul className="nav">
-                            <li className="nav-item">
+                    <div className={`${toggle ? 'position-absolute w-100 mt-5 d-flex justify-content-center full-vh bg-blur' : 'd-none'} d-md-block `}>
+                        <ul className={`nav ${toggle ? 'position-absolute mt-5 d-flex flex-column bg-bright rounded text-center p-5 d-md-flex' : 'd-none d-md-flex'}`}>
+                            <li className="nav-item px-5 px-md-0">
                                 <Link href={"/"} className="nav-link text-secondary">Home</Link>
                             </li>
                             <li className="nav-item">
