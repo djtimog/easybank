@@ -38,9 +38,11 @@ body {
   height: 100vh;
 }
 
+@media (min-width: 768px) {
+  .w-md-100{
+    width: 100% !important;
+  }
+}
 footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #392222;
+  background-color: #30314f;
 }

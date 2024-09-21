@@ -14,7 +14,7 @@ export default function Header() {
         <>
             <header className="py-3 position-sticky w-100 bg-inherit">
                 <nav className="d-flex justify-content-between h-2vh">
-                    <div className="ps-4 ps-md-2 ps-lg-5 align-self-center">
+                    <div className="ps-4 ps-md-4 ps-lg-5 align-self-center">
                         <Link href={"/"} className="nav-link align-self-center">
                             <Image src={logo.src} alt="easy bank logo" className="img-fluid w-100" width={`1`} height={`1`} />
                         </Link>
@@ -44,7 +44,7 @@ export default function Header() {
                             </li>
                         </ul>
                     </div>
-                    <div className="d-none d-md-block align-self-center pe-2 pe-lg-5">
+                    <div className="d-none d-md-block align-self-center pe-4 pe-lg-5">
                         <Link href={"/"} className="nav-link px-4 py-2 bg-primary-gradient rounded-pill text-white"><b>Request Invite</b></Link>
                     </div>
                 </nav>
