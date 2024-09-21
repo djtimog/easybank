@@ -3,6 +3,10 @@ import Link from "next/link";
 import logo from "@/images/logo.svg"
 import Image from "next/image";
 import facebookImage from "@/images/icon-facebook.svg";
+import youtubeImage from "@/images/icon-youtube.svg";
+import twitterImage from "@/images/icon-twitter.svg";
+import pinterestImage from "@/images/icon-pinterest.svg";
+import instagramImage from "@/images/icon-instagram.svg";
 import { useState } from 'react';
 export default function Footer() {
     return(
@@ -15,13 +19,17 @@ export default function Footer() {
                                 <Image src={logo.src} alt="easy bank logo" className="img-fluid w-100" width={`1`} height={`1`} />
                             </Link>
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex justify-content-around">
                             <Image src={facebookImage} alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={youtubeImage} alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={twitterImage} alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={pinterestImage} alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={instagramImage} alt="facebook" className="img-fluid" width={10} height={10} />
                         </div>
                     </div>
                     <div className={``}>
                         <ul className={`nav flex-column flex-wrap`}>
-                            <li className="nav-item px-5 px-md-0">
+                            <li className="nav-item">
                                 <Link href={"/"} className="nav-link text-secondary">Home</Link>
                             </li>
                             <li className="nav-item">
