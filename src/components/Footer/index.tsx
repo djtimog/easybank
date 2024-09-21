@@ -2,11 +2,11 @@
 import Link from "next/link";
 import logo from "@/images/logo.svg"
 import Image from "next/image";
-import facebookImage from "@/images/icon-facebook.svg";
-import youtubeImage from "@/images/icon-youtube.svg";
-import twitterImage from "@/images/icon-twitter.svg";
-import pinterestImage from "@/images/icon-pinterest.svg";
-import instagramImage from "@/images/icon-instagram.svg";
+import facebookIcon from "@/images/icon-facebook.svg";
+import youtubeIcon from "@/images/icon-youtube.svg";
+import twitterIcon from "@/images/icon-twitter.svg";
+import pinterestIcon from "@/images/icon-pinterest.svg";
+import instagramIcon from "@/images/icon-instagram.svg";
 import { useState } from 'react';
 export default function Footer() {
     return(
@@ -20,11 +20,11 @@ export default function Footer() {
                             </Link>
                         </div>
                         <div className="d-flex justify-content-around">
-                            <Image src={facebookImage} alt="facebook" className="img-fluid" width={10} height={10} />
-                            <Image src={youtubeImage} alt="facebook" className="img-fluid" width={10} height={10} />
-                            <Image src={twitterImage} alt="facebook" className="img-fluid" width={10} height={10} />
-                            <Image src={pinterestImage} alt="facebook" className="img-fluid" width={10} height={10} />
-                            <Image src={instagramImage} alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={facebookIcon}  alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={youtubeIcon}  alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={twitterIcon}  alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={pinterestIcon}  alt="facebook" className="img-fluid" width={10} height={10} />
+                            <Image src={instagramIcon}  alt="facebook" className="img-fluid" width={10} height={10} />
                         </div>
                     </div>
                     <div className={``}>

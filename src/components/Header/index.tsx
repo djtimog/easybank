@@ -3,6 +3,8 @@ import Link from "next/link";
 import logo from "@/images/logo.svg"
 import Image from "next/image";
 import { useState } from 'react';
+import hamburgerIcon from "@/images/icon-hamburger.svg";
+import closeIcon from "@/images/icon-close.svg";
 export default function Header() {
     const [toggle, setToggle] = useState(false);
     const switchToggle = () =>{
@@ -19,7 +21,8 @@ export default function Header() {
                     </div>
                     <div className="d-block d-md-none">
                         <div onClick={switchToggle}>
-                            <i className={`bi bi-${toggle ? 'x' : 'list'} h2`}></i>
+                            {/* <i className={`bi bi-${toggle ? 'x' : 'list'} h2`}></i> */}
+                            <Image src={toggle ? closeIcon : hamburgerIcon} alt={`${toggle ? "closeIcon" : "hamburgerIcon"} icon`} className="img-fluid w-100" width={`1`} height={`1`} />
                         </div>
                     </div>
                     <div className={`${toggle ? 'position-absolute w-100 mt-5 d-flex justify-content-center full-vh bg-blur' : 'd-none'} d-md-block `}>
