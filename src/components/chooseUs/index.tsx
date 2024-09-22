@@ -37,7 +37,7 @@ export default function ChooseUs() {
             <div className="row">
                 {
                     chooseUsCards.map((card, index) => (
-                        <div key={index} className="flex flex-column align-items-center justify-content-center text-center text-md-start col-12 col-sm-6 col-md-3 pe-md-3 mb-3">
+                        <div key={index} className="flex flex-column align-items-center justify-content-center text-center text-md-start col-12 col-sm-6 col-md-3 pe-md-2 mb-3">
                             <Image src={card.img} alt={card.title} className="img-fluid mb-3 ps-md-2" />
                             <h6 className="mb-3">{card.title}</h6>
                             <p className="text-secondary fs-6">{card.description}</p>
