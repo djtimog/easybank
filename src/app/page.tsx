@@ -14,7 +14,7 @@ export default function Home() {
           <div className="d-flex flex-column flex-md-row align-items-center justify-content-md-between">
             <div className="order-1 order-md-0 ps-md-5 container text-center text-md-start">
               <p className="fs-1 mb-4">Next generation <br/> digital banking</p>
-              <p className="text-secondary text-break mb-4 px-4 ps-md-0">Take your financial life online. Your Easybank account will be a non-stop-shop for spending, saving, budgeting, investing, and much more</p>
+              <p className="text-secondary text-break mb-4 px-4 me-0 me-md-5 ps-md-0">Take your financial life online. Your Easybank account will be a non-stop-shop for spending, saving, budgeting, investing, and much more</p>
               <div className="align-self-center pe-4 pe-lg-5">
                 <Link href={"/"} className="btn px-4 py-2 mb-5 bg-primary-gradient rounded-pill text-white"><b>Request Invite</b></Link>
               </div>
