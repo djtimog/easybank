@@ -7,7 +7,6 @@ import youtubeIcon from "@/images/icon-youtube.svg";
 import twitterIcon from "@/images/icon-twitter.svg";
 import pinterestIcon from "@/images/icon-pinterest.svg";
 import instagramIcon from "@/images/icon-instagram.svg";
-import { useState } from 'react';
 export default function Footer() {
     return(
         <>
