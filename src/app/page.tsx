@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+// import Image from "next/image";
 // import lgHero from "@/images/bg-intro-desktop.svg";
 // import hero from "@/images/bg-intro-mobile.svg"
 import Link from "next/link";
