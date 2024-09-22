@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import lgHero from "@/images/bg-intro-desktop.svg";
 import hero from "@/images/bg-intro-mobile.svg"
 import Link from "next/link";
+import ChooseUs from "@/components/chooseUs";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <ChooseUs/>
       </main>
       <Footer />
     </>
