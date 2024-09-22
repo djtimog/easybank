@@ -5,6 +5,7 @@ import lgHero from "@/images/bg-intro-desktop.svg";
 import hero from "@/images/bg-intro-mobile.svg"
 import Link from "next/link";
 import ChooseUs from "@/components/chooseUs";
+import Article from "@/components/Article";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           </div>
         </section>
         <ChooseUs/>
+        <Article/>
       </main>
       <Footer />
     </>
