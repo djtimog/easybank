@@ -29,7 +29,7 @@ const chooseUsCards = [
 export default function ChooseUs() {
     return(
         <>
-          <section className="px-5">
+          <section className="px-5 mb-5">
             <p className="text-center text-md-start mb-3 fs-3">Why choose Easybank?</p>
             <p className="text-center text-md-start mb-5 fs-6 text-secondary w-md-50">
                 We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
